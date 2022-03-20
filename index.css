@@ -1,0 +1,532 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  display: block;
+}
+
+#topbar {
+  width: 100%;
+  box-shadow: 0 2px 5px #ccc;
+  background-color: white;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 16px 8% 16px 6%;
+}
+
+#left-menu {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+#logo {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-right: 16px;
+}
+
+#logo a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+#logo span {
+  font-weight: 800;
+}
+
+#left-menu a {
+  text-decoration: none;
+  color: black;
+  margin-left: 32px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#search-wrapper {
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+}
+
+#search-wrapper i {
+  position: absolute;
+  color: #999;
+  font-size: 18px;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%);
+}
+
+#search-box {
+  width: 100%;
+  border: 1px solid rgb(245, 242, 242);
+  background-color: rgb(245, 242, 242);
+  box-sizing: border-box;
+  padding: 10px 24px 8px 48px;
+  color: black;
+  outline: none;
+}
+
+#right-menu {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+#cart-wrapper {
+  position: relative;
+  margin-right: 32px;
+}
+
+#addCartCount {
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: 600;
+  background-color: #009688;
+  color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: -12px;
+  right: -12px;
+}
+
+#addCartCount p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+#cart-wrapper i {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#cart-wrapper a {
+  text-decoration: none;
+  color: black;
+}
+
+#user {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+main {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 100px 0px;
+}
+
+#slider {
+  overflow: hidden;
+}
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+
+#slider figure img {
+  width: 16%;
+  float: left;
+  padding: 0 2%;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  12% {
+    left: 0;
+  }
+  23% {
+    left: -100%;
+  }
+  34% {
+    left: -100%;
+  }
+  45% {
+    left: -200%;
+  }
+  56% {
+    left: -200%;
+  }
+  67% {
+    left: -300%;
+  }
+  78% {
+    left: -300%;
+  }
+  89% {
+    left: -400%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+#carousal-disk {
+  list-style-type: none;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#carousal-disk li {
+  display: inline-block;
+}
+
+#carousal-disk li button {
+  font-size: 0px;
+  color: rgb(204, 204, 204);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 0;
+}
+
+.section-heading {
+  margin-top: 80px;
+  margin-left: 110px;
+  font-size: 28px;
+  font-weight: 600;
+  opacity: 0.8;
+  margin-bottom: 12px;
+}
+
+#ClothingCards,
+#AccessoriesCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0px 4%;
+}
+
+.card {
+  width: 17.2%;
+  min-width: 200px;
+  height: auto;
+  margin: 20px 5px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(0 0 0 / 30%) 0px 2px 10px;
+  border-radius: 5px;
+}
+
+.card:hover {
+  box-shadow: 0px 3px 10px #433d3d;
+}
+
+.card img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card #productDetails {
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+.card #productDetails h4 {
+  font-weight: 600;
+  margin: 0px;
+  font-size: 16px;
+}
+
+.card #productDetails h5 {
+  font-weight: 600;
+  opacity: 0.8;
+  margin: 12px 0px 0px;
+}
+
+.card #productDetails p {
+  margin: 12px 0px 0px;
+  font-weight: 600;
+  color: rgb(0, 150, 136);
+}
+
+footer {
+  width: 100%;
+  background-color: #1c1b1e;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 4% 8%;
+}
+
+footer div {
+  padding: 0px 60px;
+}
+
+.footer-heading {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  opacity: 0.9;
+  letter-spacing: 1px;
+}
+
+footer p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: white;
+  display: block;
+  margin-top: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+#edyoda-logo {
+  width: 128px;
+  z-index: 10;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+}
+
+#edyoda-logo img {
+  width: 100%;
+}
+
+#main-detail-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 2% 8%;
+  box-sizing: border-box;
+}
+
+#main-image-section {
+  width: 40%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  align-self: flex-start;
+}
+
+#main-image {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#product-detail-wrapper {
+  align-self: flex-start;
+  width: 60%;
+  box-sizing: border-box;
+  z-index: 5;
+}
+
+.previewImage {
+  display: flex;
+}
+
+.previewImage img {
+  width: 50px;
+  border-radius: 6px;
+  margin: 0 8px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+.thumbail {
+  height: 100%;
+  margin-right: 20px;
+  border-radius: 6px;
+  padding: 3px;
+}
+
+#name {
+  font-size: 48px;
+  font-weight: 500;
+  margin: 0;
+}
+
+#brand {
+  font-weight: 600;
+  opacity: 0.6;
+  margin: 0;
+  margin-top: 8px;
+  font-size: 25px;
+}
+
+.detailViewHeading {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.9);
+  margin-top: 36px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+#price {
+  max-width: 500px;
+  font-size: 24px;
+  letter-spacing: 1px;
+  line-height: 1.3;
+  font-weight: 600;
+  color: #009688;
+  margin: 0;
+  display: inline-block;
+}
+
+#description {
+  max-width: 500px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 1.3;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.active {
+  box-sizing: content-box;
+  border: 2px solid #009688;
+}
+
+#addToCart {
+  background-color: #009688;
+  font-size: 18px;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  padding: 18px 36px;
+  border-radius: 6px;
+  margin-top: 36px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+  color: white;
+  transition: transform 200ms;
+}
+
+#main-addToCart-container {
+  padding: 2% 8%;
+  box-sizing: border-box;
+}
+
+#mainHeading {
+  font-size: 36px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 48px;
+}
+
+#contentWrapper {
+  display: flex;
+  justify-content: start;
+}
+
+#cardList {
+  width: 50%;
+}
+
+#totalItem {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+#addToCardItem {
+  display: flex;
+  box-sizing: border-box;
+  box-shadow: 0 2px 5px #ccc;
+  border-radius: 5px;
+  background-color: white;
+  max-width: 600px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+#addToCartItems h4 {
+  font-weight: 600;
+  margin: 0px 0px 4px;
+  font-size: 18px;
+}
+
+#addToCartItems p {
+  margin: 0;
+}
+
+#totalAmount {
+  width: 50%;
+  height: fit-content;
+  margin-top: 48px;
+  margin-left: 3%;
+  box-sizing: border-box;
+  box-shadow: 0 2px 5px #ccc;
+  border-radius: 5px;
+  padding: 16px;
+}
+
+#addToCartTotalAmount {
+  color: black;
+  opacity: 0.8;
+  font-size: 24px;
+  font-weight: 800;
+  margin-left: 4px;
+}
+
+#placeOrder {
+  background-color: #009688;
+  font-size: 18px;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  padding: 18px 36px;
+  border-radius: 6px;
+  margin-top: 36px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+.checkoutItemImg {
+  width: 80px;
+  min-width: 80px;
+  border-radius: 5px;
+  margin-right: 16px;
+}
+
+#main-order-container {
+  padding: 20px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.successIcon {
+  text-align: center;
+  color: green;
+}
